@@ -2,6 +2,7 @@ import {
   appendAudioList,
   getAudioList,
   getAudioSettings,
+  getCurrentAudio,
   pauseAudio,
   playAudio,
   replaceAudioList,
@@ -13,7 +14,9 @@ import {
   createOrReplaceCharacter,
   deleteCharacter,
   getCharacter,
+  getCharacterIds,
   getCharacterNames,
+  getCurrentCharacterId,
   getCurrentCharacterName,
   replaceCharacter,
   updateCharacterWith,
@@ -112,6 +115,19 @@ import {
   setPreset,
   updatePresetWith,
 } from '@/function/preset';
+import {
+  createOrReplacePersona,
+  createPersona,
+  deletePersona,
+  getCurrentPersonaId,
+  getCurrentPersonaName,
+  getPersona,
+  getPersonaAvatarPath,
+  getPersonaIds,
+  getPersonaNames,
+  replacePersona,
+  updatePersonaWith,
+} from '@/function/persona';
 import {
   getCharAvatarPath,
   getCharData,
@@ -261,13 +277,16 @@ function getTavernHelper() {
     appendAudioList,
     getAudioSettings,
     setAudioSettings,
+    getCurrentAudio,
 
     // builtin
     builtin,
 
     // character
     getCharacterNames,
+    getCharacterIds,
     getCurrentCharacterName,
+    getCurrentCharacterId,
     createCharacter,
     createOrReplaceCharacter,
     deleteCharacter,
@@ -366,6 +385,19 @@ function getTavernHelper() {
     replacePreset,
     updatePresetWith,
     setPreset,
+
+    // persona
+    getPersonaNames,
+    getPersonaIds,
+    getCurrentPersonaName,
+    getCurrentPersonaId,
+    getPersonaAvatarPath,
+    createPersona,
+    createOrReplacePersona,
+    deletePersona,
+    getPersona,
+    replacePersona,
+    updatePersonaWith,
 
     // raw_character
     RawCharacter,
